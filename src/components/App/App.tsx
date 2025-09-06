@@ -65,7 +65,7 @@ const [isLoading, setIsLoading] = useState(false);
   <div className={css.app}>
     <Toaster position="top-center" />
     {isLoading && <Loader />}
-    <SearchBar onSearch={handleSearch}/>
+    <SearchBar onSubmit={handleSearch}/>
     
      {hasError ? (
         <ErrorMessage />
