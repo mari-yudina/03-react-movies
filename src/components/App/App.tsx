@@ -22,10 +22,6 @@ const [isLoading, setIsLoading] = useState(false);
 
     const handleSearch = async (searchValue: string) => {
 
-       if (!searchValue.trim()) {
-    toast.error("Please enter your search query.");
-    return;
-  }
 
     try {
         setHasError(false);
